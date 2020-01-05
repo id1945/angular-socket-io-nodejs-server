@@ -18,6 +18,6 @@ npm install
 npm start
 ```
 
-![Run app](https://raw.githubusercontent.com/id1945/angular-socket-io-nodejs-server/master/src/assets/images/2020-01-01_182109.png "Run app")
-![Run app](https://raw.githubusercontent.com/id1945/angular-socket-io-nodejs-server/master/src/assets/images/2020-01-01_182109.png "Run app")
-![Run app](https://raw.githubusercontent.com/id1945/angular-socket-io-nodejs-server/master/src/assets/images/2020-01-01_182109.png "Run app")
+![Chatbot](https://raw.githubusercontent.com/id1945/angular-socket-io-nodejs-server/master/admin/src/assets/images/2020-01-05_204110.png "Chatbot")
+![Chart](https://github.com/id1945/angular-socket-io-nodejs-server/blob/master/admin/src/assets/images/Video_2020-01-05_203438_(new).gif "Chart")
+![Console](https://raw.githubusercontent.com/id1945/angular-socket-io-nodejs-server/master/admin/src/assets/images/2020-01-05_204256.png "Console")
