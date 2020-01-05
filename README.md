@@ -88,7 +88,7 @@ import io from 'socket.io-client';
 const socket = io('http://localhost:3000');
 ````
 
-## Chatbot
+## chatbot.component.ts
 ````javascript
   ngOnInit() {
     // Socket get data form server
@@ -104,7 +104,7 @@ const socket = io('http://localhost:3000');
   }
 ````
 
-## Chart
+## chart.component.ts
 ````javascript
 ngOnInit() {
     ...
