@@ -1,0 +1,7 @@
+.direct-chat-text {
+  text-align: left;
+}
+
+.direct-chat-warning .right>.direct-chat-text {
+  text-align: right;
+}

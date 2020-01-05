@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-md-12">
+    <!-- DIRECT CHAT -->
+    <div class="box box-warning direct-chat direct-chat-warning">
+      <div class="box-header with-border">
+        <h3 class="box-title">Real Time Client and Server Messages</h3>
+        <div class="box-tools pull-right">
+          <span data-toggle="tooltip" title="" class="badge bg-yellow" data-original-title="3 New Messages">{{CountMyMessages+CountServerMessages}}</span>
+          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+          <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Contacts">
+              <i class="fa fa-comments"></i></button>
+          <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+              </button>
+        </div>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <!-- Conversations are loaded here -->
+        <div *ngFor="let message of messages; let i = index" class="direct-chat-messages" style="height:90px;">
+          <!-- Message to the left -->
+          <div *ngIf="message.user=='Admin'" class="direct-chat-msg">
+            <div class="direct-chat-info clearfix">
+              <span class="direct-chat-name pull-right">The Server</span>
+              <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+            </div>
+            <!-- /.direct-chat-info -->
+            <img class="direct-chat-img" src="assets/dist/img/user2-160x160.jpg" alt="message user image">
+            <!-- /.direct-chat-img -->
+            <div class="direct-chat-text" style="direction:rtl">
+              {{message.message}}
+            </div>
+            <!-- /.direct-chat-text -->
+          </div>
+          <!-- Message. Default to the right -->
+          <div *ngIf="message.user=='User'" class="direct-chat-msg right">
+            <div class="direct-chat-info clearfix">
+              <span class="direct-chat-name pull-left">User Name </span>
+            </div>
+            <!-- /.direct-chat-info -->
+            <img class="direct-chat-img" src="assets/dist/img/user3-128x128.jpg" alt="message user image">
+            <!-- /.direct-chat-img -->
+            <div class="direct-chat-text">
+              {{message.message}}
+            </div>
+            <!-- /.direct-chat-text -->
+          </div>
+          <!-- /.direct-chat-msg -->
+        </div>
+        <!-- /.direct-chat-text -->
+      </div>
+      <!-- /.direct-chat-msg -->
+    </div>
+    <!--/.direct-chat-messages-->
+    <!-- Contacts are loaded here -->
+    <!-- /.direct-chat-pane -->
+  </div>
+  <!-- /.box-body -->
+  <!-- /.box-footer-->
+  <div class="form-group">
+    <input type="text" class="form-control fixed-btt" (change)="onKeyup($event.target.value)" placeholder="Enter your text ..">
+  </div>
+</div>
+<!--/.direct-chat -->
+<!-- /.col -->
